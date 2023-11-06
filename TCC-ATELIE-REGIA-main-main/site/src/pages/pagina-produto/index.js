@@ -1,11 +1,11 @@
 import "./index.scss";
 import React, { useState } from "react";
 import CarrosselDeImagens from "../../components/carrosel";
-import Cabecalho1 from '../../components/cabecalho1/index';
+
 export default function Produto() {
   const images = [
     "/assets/images/image_43.png",
-    "/assets/images/image_43.png",
+    "/assets/images/image_47.pn.webp",
     "/assets/images/image_43.png"
   ];
 

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./index.scss";
 
 export default function Cabecalho1() {
@@ -11,7 +11,7 @@ export default function Cabecalho1() {
   return (
     <div className="page">
     
-<div className={`cabecalho ${menuVisivel ? "aberto" : ""}`}>
+<div className={`cabecalho ${menuVisivel ? "aberto" : ""}`} style={{maxWidth: menuVisivel && "calc(100% - 230px)"}}>
         <div className="cabecalho1">
           <div className="cab1-esquerda">
             <div className="menu-img">

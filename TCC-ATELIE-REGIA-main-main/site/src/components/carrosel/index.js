@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./index.scss";
-import Cabecalho2 from "../../components/cabecalho2/index";
+import Cabecalho2 from "../cabecalho2";
+
 
 const CarrosselDeImagens = ({ imagens }) => {
   const [slideAtual, setSlideAtual] = useState(0);
@@ -25,6 +26,9 @@ const CarrosselDeImagens = ({ imagens }) => {
       <div className="slide" onClick={avancarNaClicada}>
         <img src={imagens[slideAtual]} alt={`Slide ${slideAtual + 1}`} />
         <div className="conteudo-sobre-imagens">
+
+
+
           <div className="direita">
             <p className="">INICIO / COLEÇÕES /</p>
           </div>
@@ -32,6 +36,8 @@ const CarrosselDeImagens = ({ imagens }) => {
             <p>NOVA COLEÇÃO PRIMAVERA/ VERÃO 2023</p>
           </div>
         </div>
+
+
       </div>
     </div>
   );
