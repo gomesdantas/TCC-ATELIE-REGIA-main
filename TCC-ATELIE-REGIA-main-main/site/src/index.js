@@ -6,7 +6,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Produto from './pages/pagina-produto';
 import Sacola from './pages/sacola';
 import Loginadm from './pages/admlogin';
-import Cadastroproduto from './pages/cadastroproduto';
+
 import Cadastrocliente from './pages/cadastrocliente';
 import LoginCliente from './pages/logincliente';
 import Homepage from './pages/pagina-inicio';
@@ -16,6 +16,7 @@ import Detalhespedido from './pages/detalhespedido';
 import Pagamento from './pages/pagamento';
 import Painel from './pages/paineladm';
 import Menu from './pages/menu';
+import Cadastroproduto from './pages/cadastroproduto/cadastroproduto';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

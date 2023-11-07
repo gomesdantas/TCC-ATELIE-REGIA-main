@@ -38,6 +38,9 @@ export default function Homepage() {
             </div>
           </div>
           <div className='container4video-header'>
+
+          <video src="/assets/video/atelie.mp4" controls>
+</video>
           </div>
           <div className='container5-header'>
             <h1> CATÁLOGO DE TECIDOS </h1>
@@ -82,9 +85,11 @@ export default function Homepage() {
           </div>
           <Link to='/adm/relatoriosadm'> relatorios </Link>
           <Link to='/adm/consulta/pedidos'> Consulta pedidos </Link>
-          <Rodape />
+          
         </div>
       </div>
     </div>
   );
 }
+
+

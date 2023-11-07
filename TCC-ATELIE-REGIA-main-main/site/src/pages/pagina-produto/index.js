@@ -5,8 +5,8 @@ import CarrosselDeImagens from "../../components/carrosel";
 export default function Produto() {
   const images = [
     "/assets/images/image_43.png",
-    "/assets/images/image_47.pn.webp",
-    "/assets/images/image_43.png"
+    "/assets/images/image_47.webp",
+    "/assets/images/image_48.png"
   ];
 
   return (
