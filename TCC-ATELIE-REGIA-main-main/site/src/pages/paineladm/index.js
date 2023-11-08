@@ -17,7 +17,8 @@ export default function Painel() {
 
   return (
     <div className="painel-adm">
-      <div className={`cabecalho-painel ${cabecalhoPosition}`}>
+      <div className={`cabecalho-painel ${cabecalhoPosition}`}
+        style={{width: menuVisible && "calc(100% - 200px)"}}>
         <div className="menu-icon">
           <img
             className="menu1"
@@ -37,25 +38,26 @@ export default function Painel() {
           </div>
         </div>
       </div>
-      <div className="painel">
-        {menuVisible && (
-          <div className="menu-infos-container">
-            <div className="menu-infos">
-              <img
-                className="atelie"
-                src="/assets/images/atelieicon.png"
-                alt=""
-              />
-              <div id="menu" className="menu">
-                <h5>PAINEL</h5>
-                <a href=""> CADASTRO DE PRODUTOS</a>
-                <a href="">CONSULTA DE PRODUTOS</a>
-                <a href="">PEDIDOS</a>
-                <a href="">RELATÓRIOS</a>
-              </div>
+      {menuVisible && (
+        <div className="menu-infos-container">
+          <div className="menu-infos">
+            <img
+              className="atelie"
+              src="/assets/images/atelieicon.png"
+              alt=""
+            />
+            <div id="menu" className="menu">
+              <h5>PAINEL</h5>
+              <a href=""> CADASTRO DE PRODUTOS</a>
+              <a href="">CONSULTA DE PRODUTOS</a>
+              <a href="">PEDIDOS</a>
+              <a href="">RELATÓRIOS</a>
             </div>
           </div>
-        )}
+        </div>
+      )}
+
+      <div className="painel">
         <div className="organiza">
           <div className="container">
             <div className="topo">

@@ -37,6 +37,7 @@
 
 
 .container-produtos {
+  // 
   .carousel-container {
     display: flex;
     overflow: hidden;
@@ -60,9 +61,9 @@
     height: 30%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-between ;
     align-items: center;
-    padding: 0px 65px;
+   padding: 0px 40px;
   }
 
   .faixa-ordem > p {
@@ -89,11 +90,11 @@
 
   .images > img {
     width: 15px;
-    margin: 5px;
+   
   }
 
   .secao-container-produtos {
-    margin-top: 100px;
+    margin-top: 30px;
     display: flex;
     flex-direction: row;
  
@@ -172,13 +173,14 @@
   }
 
   .produto-pair {
- 
     display: flex;
+    
     flex-wrap: wrap;
-  
-    margin: -5px;
   }
   
+  .produto-pair-res{
+    display: none;
+  }
 
   .produto {
     text-align: center;
@@ -278,7 +280,7 @@
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1000px) {
   .faixa-ordem {
     flex-direction: column;
     justify-content: space-evenly;
@@ -348,3 +350,114 @@ margin-bottom: 10px;
 
 }
 
+// ..........................................
+
+@media (max-width: 400px) {
+  .menu-img{
+      img{
+          width: 10px;
+      }
+   
+  }
+  .img1-cab1{
+  width: 20px;
+  }
+
+  .container-produtos .secao-container-filtros {
+      display: flex;
+      flex-direction: column;
+      padding: 0px 0px;
+  }
+ 
+  .container-produtos #fixado {
+   padding: 5px;
+    width: 80px;
+    height: 5vh;
+    
+}
+
+.container-produtos #fixado {
+  font: 10px "font2";
+  position: relative;
+top: -27px;
+  margin-bottom: 10px;
+  
+}
+
+.container-produtos .produto {
+
+  width: 200px;
+}
+
+.container-produtos .produto > p {
+  font: 10px "montserrat";
+  
+}
+  
+.container-produtos .produto {
+ 
+  width: 100px;
+}
+
+#imagem-produto {
+  width: 80px;
+}
+
+ .faixa-ordem {
+
+  padding: 0px 10px !important;
+  #titulo-ordem{
+    font-size: 10px;
+
+  }
+
+  #baixo{
+    width: 10px;
+  }
+
+  #cima{
+    width: 10px;
+  }
+}
+
+.secao-container-filtros{
+  #filtra{
+    font-size: 10px;
+  }
+
+  .quadrado {
+    border-radius: 2px;
+    width: 9px;
+    height: 9px;
+    border: 1px solid #000;
+}
+
+.secoes a {
+  font: 10px "montserrat";
+  margin: 5px;
+}
+
+ .secoes > h6 {
+  text-align: start;
+  font: 10px "montserrat";
+ margin-bottom: 3px;
+}
+}
+
+.container-produtos .produtos {
+   padding: 0px 20px; 
+  display: flex;
+  flex-direction: row;
+}
+
+.container-produtos hr {
+height: 100vh;
+  margin-left: 20px;
+ 
+}
+
+.produto #nome-produto {
+  font-size: 8px;
+  margin-bottom: -1px;
+}
+  }

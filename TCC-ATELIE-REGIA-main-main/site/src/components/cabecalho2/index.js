@@ -10,19 +10,22 @@ export default function Cabecalho2() {
 
   return (
     <div className="page">
-    
-<div className={`cabecalho ${menuVisivel ? "aberto" : ""}`} style={{maxWidth: menuVisivel && "calc(100% - 230px)"}}>
+      <div
+        className={`cabecalho ${menuVisivel ? "aberto" : ""}`}
+        style={{ maxWidth: menuVisivel && "calc(100% - 230px)" }}
+      >
         <div className="cabecalho1">
           <div className="cab1-esquerda">
             <div className="menu-img">
               <img
                 src="/assets/images/zabugaaa.png"
                 alt=""
+                id="menu1"
                 className="menu1"
                 onClick={ve}
               />
             </div>
-            <h2>ATELIÊ RÉGIA</h2>
+            <h2  id="nome">ATELIÊ RÉGIA</h2>
             <div>
               <img src="/assets/images/logo.png" alt="" className="logo1" />
             </div>
@@ -30,9 +33,10 @@ export default function Cabecalho2() {
           <div className="cab1-direita">
             <img className="img1-cab1" src="/assets/images/lupis.png" alt="" />
             <h3>
-              <a href="/login/cliente">LOGIN</a>
+              <a id="log" href="/login/cliente">LOGIN</a>
             </h3>
             <img
+            id="img2-cab1"
               className="img2-cab1"
               src="/assets/images/redfivediamonds.png"
               alt=""
@@ -41,7 +45,7 @@ export default function Cabecalho2() {
         </div>
       </div>
 
-        {menuVisivel && (
+      {menuVisivel && (
         <div className="menu-overlay">
           <div className="menu-container">
             <img src="/assets/images/logo.png" />
@@ -60,7 +64,6 @@ export default function Cabecalho2() {
           </div>
         </div>
       )}
-
     </div>
   );
 }

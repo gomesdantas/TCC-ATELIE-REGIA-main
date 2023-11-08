@@ -182,7 +182,7 @@
     position: absolute;
     top: 0;
     background-color: #b7a598a2;
-    height: 65vh;
+    height: 75vh;
     width: 200px;
     transition: transform 0.1s;
   }
@@ -255,7 +255,7 @@
   .grafico {
     height: 40vh;
     width: 65.5vw;
-    min-width: 500px;
+    // min-width: 500px;
     display: flex;
     margin-top: 20px;
     background-color: #dfcece6c;
@@ -265,7 +265,7 @@
 
   .grafico>img {
     width: 750px;
-    min-width: 450px;
+    // min-width: 450px;
   }
 
   .graficos {
@@ -301,7 +301,7 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (min-width: 600px) {
   .container {
     display: flex;
     justify-content: center;
@@ -329,6 +329,92 @@
   .escuro h1 {
     font-size: 8px;
   }
+
+  .painel-adm .grafico > img {
+    width: 400px;
 }
 
-@media (max-width: 320px) {}
+  .painel-adm .grafico {
+    display: block;
+    width: 500px;
+    height: 30vh;
+   }
+}
+
+@media (max-width: 500px) {
+
+
+  .painel-adm .cabecalho-painel {
+
+
+.admin > img{
+width: 20px;
+}
+
+.menu1 > p{
+  font-size: 12px;
+}
+
+  img{
+    width: 30px;
+  }
+}
+
+  .painel-adm .painel .container {
+    padding: 0px 0px;
+}
+
+.topo {
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.painel-adm .claro {
+  width: 150px;
+  height: 10vh;
+  margin-top: 10px;
+  padding: 10px;
+;
+}
+
+.painel-adm .escuro {
+  width: 150px;
+  height: 10vh;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.topo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.painel-adm .topo {
+  display: flex;
+  align-items: center;
+justify-content: center;
+align-self: center;
+
+}
+
+.painel-adm .grafico > img {
+  width: 300px;
+
+}
+
+.painel-adm .grafico {
+ display: block;
+ width: 450px;
+ height: 25vh;
+}
+
+.divide{
+display: flex;
+align-items: center;
+flex-direction: column;
+justify-content: center;  
+}
+}
