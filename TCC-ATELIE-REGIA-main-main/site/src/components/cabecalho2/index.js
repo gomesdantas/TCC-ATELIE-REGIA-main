@@ -1,8 +1,19 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./index.scss";
 
 export default function Cabecalho2() {
   const [menuVisivel, setMenuVisivel] = useState(false);
+
+  const [width, setWidth] = useState(0);
+  const elementRef = useRef(null);
+
+
+  useEffect(() => {
+    if (!elementRef.current) 
+      return;
+
+    setWidth(elementRef.current.getBoundingClientRect().width);
+  }); //empty dependency array so it only runs once at render
 
   const ve = () => {
     setMenuVisivel(!menuVisivel);
@@ -12,7 +23,7 @@ export default function Cabecalho2() {
     <div className="page">
       <div
         className={`cabecalho ${menuVisivel ? "aberto" : ""}`}
-        style={{ maxWidth: menuVisivel && "calc(100% - 230px)" }}
+        style={{ maxWidth: menuVisivel && `calc(100% - ${width}px)`, transform: menuVisivel && `translateX(${width}px)`}}
       >
         <div className="cabecalho1">
           <div className="cab1-esquerda">
@@ -47,7 +58,7 @@ export default function Cabecalho2() {
 
       {menuVisivel && (
         <div className="menu-overlay">
-          <div className="menu-container">
+          <div ref={elementRef} className="menu-container">
             <img src="/assets/images/logo.png" />
             <div className="menu">
               <a>Novidades</a>

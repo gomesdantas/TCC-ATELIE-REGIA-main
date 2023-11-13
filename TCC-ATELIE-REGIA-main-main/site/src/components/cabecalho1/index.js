@@ -10,8 +10,8 @@ export default function Cabecalho1() {
 
   return (
     <div className="page">
-    
-<div className={`cabecalho ${menuVisivel ? "aberto" : ""}`} style={{maxWidth: menuVisivel && "calc(100% - 230px)"}}>
+
+      <div className={`cabecalho ${menuVisivel ? "aberto" : ""}`} style={{ maxWidth: menuVisivel && "calc(100% - 100px)" }}>
         <div className="cabecalho1">
           <div className="cab1-esquerda">
             <div className="menu-img">
@@ -41,7 +41,7 @@ export default function Cabecalho1() {
         </div>
       </div>
 
-        {menuVisivel && (
+      {menuVisivel && (
         <div className="menu-overlay">
           <div className="menu-container">
             <img src="/assets/images/logo.png" />
