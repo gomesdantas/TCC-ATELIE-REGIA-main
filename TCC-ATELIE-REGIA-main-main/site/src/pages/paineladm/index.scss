@@ -41,7 +41,7 @@
 
   .cabecalho-painel.direita {
     transform: translateX(200px);
-    max-width: 85.1%;
+    max-width: 100%;
   }
 
   .cabecalho-painel {
@@ -253,23 +253,25 @@
   }
 
   .grafico {
+   
+    align-items: center;
     height: 40vh;
-   width:97%;
+   width:80%;
     display: flex;
     margin-top: 20px;
     background-color: #dfcece6c;
-    padding: 20px;
+    
     box-shadow: 1px 3px 3px 3px rgba(0, 0, 0, 0.2);
   }
 
   .grafico>img {
-    width: 750px;
+    width: 700px;
     // min-width: 450px;
   }
 
   .graficos {
     width: 100%;
-    min-width: 50%;
+    min-width: 30%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -300,17 +302,16 @@
   }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 600px) {
 
   .painel-adm .cabecalho-painel {
-  width: auto;
 }
 
   .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100;
   }
 
   .topo {
@@ -318,14 +319,35 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
   }
 
-  .graficos {
+
+
+  .painel-adm .claro {
+    background-color: #dfcece;
+    box-shadow: 1px 3px 3px 1px rgba(0, 0, 0, 0.2);
+    width: 200px;
+   height: 10vh
+  
+}
+
+.painel-adm .escuro{
+  
+  box-shadow: 1px 3px 3px 1px rgba(0, 0, 0, 0.2);
+  width: 200px;
+ height: 10vh
+
+}
+
+
+.graficos {
     padding: 20px;
   }
 
   .claro {
     margin: 10px;
+    
   }
 
   .claro h1,
@@ -334,12 +356,13 @@
   }
 
   .painel-adm .grafico > img {
-    min-width: 400px;
+    width: 400px;
 }
 
   .painel-adm .grafico {
     display: block;
-    height: 35vh;
+    width: 450px;
+    height: 20vh;
    }
 }
 
@@ -433,4 +456,5 @@ align-items: center;
 flex-direction: column;
 justify-content: center;  
 }
+
 }

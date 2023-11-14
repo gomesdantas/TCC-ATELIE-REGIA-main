@@ -42,12 +42,12 @@ width: 250px;
     .login{
         background-color: hsl(0, 0%, 100%, 0.8) ;
         
-        height: 500px;
-        width: 500px;
+       
         display: flex;
         align-items: center;
         flex-direction: column;
-padding: 70px;
+        padding: 80px 120px;
+    
     }
 
     .login>h1{
@@ -133,16 +133,49 @@ flex-direction: column;
   font-family: 'Courier New', Courier, monospace;
    }
 
-   @media (max-width: 600px) {
-    
-    .page-login-adm{
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .login{
-        display: flex;
-    }
-   }
 }
 
+@media (min-width: 600px){
+    .page-login-adm {    
+        flex-direction: column; 
+    } 
+
+    .page-login-adm .adm {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+     height: 10vh;
+    }
+}
+
+@media (max-width: 400px){
+    .page-login-adm {    
+        flex-direction: column; 
+    } 
+
+    .page-login-adm .adm {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+     height: 10vh;
+    }
+
+    .page-login-adm .login {
+        background-color: hsla(0, 0%, 100%, 0.8);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+       width: 350px;
+       height: 400px;
+    }
+
+    .page-login-adm .adm > h1 {
+        color: #F5ECDE;
+       font-size: 30px;
+    text-align: center;
+    }
+
+   
+}
